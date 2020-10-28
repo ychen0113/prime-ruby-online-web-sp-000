@@ -9,9 +9,7 @@ def prime?(n)
      false
     elsif n > 3 
       while i * i <= n do 
-        if n % i == 0 or n % (i + 2) == 0
-             false
-           end
+        return false if n % i == 0 or n % (i + 2) == 0
         i += 6
         end
         true
